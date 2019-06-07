@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="112" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[Siparis.Core]Siparis.Core.Aspect._TransactionScopeAspect">
+    <Instance Declaration="#2=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.MusteriManager::TransactionalAdd(Siparis.Entity.Musteri, Siparis.Entity.Telefon)" Id="1b867dae131bd5a">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#4=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.MusteriManager::TransactionalDelete(Siparis.Entity.Telefon, Siparis.Entity.Musteri)" Id="1b867dac66be4e7">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.MusteriManager::TransactionalUpdate(Siparis.Entity.Musteri, Siparis.Entity.Telefon)" Id="1b867da0c393c53">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="6" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.UrunManager::TransactionalAdd(Siparis.Entity.Urun, Siparis.Entity.Barkod)" Id="1b867dab94844c1">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="9" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.UrunManager::TransactionalDelete(Siparis.Entity.Barkod, Siparis.Entity.Urun)" Id="1b867daf0247e36">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="10" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8=M:[Siparis.BusinessLogic]Siparis.BusinessLogic.Concart.UrunManager::TransactionalUpdate(Siparis.Entity.Urun, Siparis.Entity.Barkod)" Id="1b867da8ea40be4">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="13" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#9=T:[Siparis.Core]Siparis.Core.Aspect._FluentValidationAspect">
+    <Instance Declaration="#2" Id="1b867dacbeab171">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#2" Id="1b867da03250146">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="0" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5" Id="1b867dad9aebc5a">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="5" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5" Id="1b867da4059db80">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6" Id="1b867da56b10f18">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="8" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6" Id="1b867dac05a0985">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="7" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8" Id="1b867da2545040e">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="12" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8" Id="1b867da63ddd412">
+      <Target>
+        <JoinPoint Advising="#9" Description="#3" Ordinal="11" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#10=M:[Siparis.Core]Siparis.Core.Aspect._TransactionScopeAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11=2" Description="#12=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#13=M:[Siparis.Core]Siparis.Core.Aspect._TransactionScopeAspect::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+  <Annotation Target="#14=M:[Siparis.Core]Siparis.Core.Aspect._TransactionScopeAspect::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+  <Annotation Target="#15=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnException([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+  <Annotation Target="#16=M:[Siparis.Core]Siparis.Core.Aspect._FluentValidationAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+  <Annotation Target="#17=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnSuccess([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+  <Annotation Target="#18=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnExit([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#11" Description="#12" />
+</Symbols>
