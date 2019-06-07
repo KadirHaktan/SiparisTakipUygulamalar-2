@@ -1,0 +1,60 @@
+﻿
+
+@model Siparis.MvcWebUI.Models.EntityModel
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+   
+}
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Guncelleme</title>
+
+  
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        @using (Html.BeginForm("MusteriGuncelleme", "Musteri"))
+        {
+
+        <div class="form-group">
+            <label for="Musteri_ID">Müşteri ID</label>
+            <input type="number" id="Musteri_ID" name="Musteri_ID" class="form-control" placeholder="Müşteri ID giriniz" />
+        </div>
+
+            <div class="form-group">
+                <label for="Ad">Müşteri Adı</label>
+                <input type="text" id="Ad" name="Ad" class="form-control" placeholder="Müşteri Adını giriniz" />
+            </div>
+
+            <div class="form-group">
+                <label for="Soyad">Müşteri Soyadı</label>
+                <input type="text" id="Soyad" name="Soyad" class="form-control" placeholder="Müşteri Soyadını giriniz" />
+            </div>
+
+            <div class="form-group">
+                <label for="TamAdres">Müşteri Tam Adres</label>
+                <input type="text" id="TamAdres" name="TamAdres" class="form-control" placeholder="Tam Adrese giriniz" />
+            </div>
+
+            <div class="form-group">
+                <label for="TelefonNumarasi">Müşteri Telefon Numarası</label>
+                <input type="text" id="TelefonNumarasi" name="TelefonNumarasi" class="form-control" placeholder="Telefon Numarası giriniz" />
+            </div>
+
+            <button type="submit" class="btn btn-primary pull-right">Guncelle</button>
+        }
+    </div>
+</body>
+</html>

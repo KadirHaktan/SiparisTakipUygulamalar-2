@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Siparis.MvcWebUI.Models.EntityListModel
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MusteriAnaSayfa</title>
+</head>
+ <body>
+     <div class="container-fluid">
+         
+         <table class="table">
+             <thead>
+                 <tr>
+                     <th scope="col">Musteri ID</th>
+                     <th scope="col">Musteri Adı</th>
+                     <th scope="col">Musteri Soyadı</th>
+                     <th scope="col">Musteri Tam Adres</th>
+
+                 </tr>
+             </thead>
+
+             <tbody>
+                 @foreach (var i in Model.Musteriler)
+                 {
+                     <tr>
+                         <td scope="row">@i.Musteri_ID</td>
+                         <td scope="row">@i.Ad</td>
+                         <td scope="row">@i.Soyad</td>
+                         <td scope="row">@i.TamAdres</td>
+                     </tr>
+
+                 }
+             </tbody>
+         </table>
+
+
+     </div>
+ </body>
+</html>

@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ekleme</title>
+</head>
+<body>
+    <div class="container-fluid">
+        @using (@Html.BeginForm("SiparisEkle", "Siparis", FormMethod.Post))
+        {
+
+            <div class="form-group">
+                <label for="Musteri_ID">Müşteri ID</label>
+                <input type="number" id="Musteri_ID" name="Musteri_ID" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Urun_ID">Urun ID</label>
+                <input type="number" id="Urun_ID" name="Urun_ID" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Adet">Adet</label>
+                <input type="number" id="Adet" name="Adet" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Tarih">Siparis Tarihi</label>
+                <input type="datetime" id="Tarih" name="Tarih" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary pull-right">Ekle</button>
+        }
+
+    </div>
+</body>
+</html>

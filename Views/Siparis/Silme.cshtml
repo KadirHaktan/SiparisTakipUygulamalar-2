@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Silme</title>
+</head>
+<body>
+    <div class="container-fluid">
+        @using (@Html.BeginForm("SiparisSilme", "Siparis"))
+        {
+
+            <div class="form-group">
+                <label for="Siparis_ID">Siparis_ID</label>
+                <input type="number" id="Siparis_ID" name="Siparis_ID" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary pull-right">Sİl</button>
+        }
+    </div>
+</body>
+</html>
