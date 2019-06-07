@@ -19,7 +19,7 @@
 # Kullanılan başka yapı
 
 # Transactional operasyon yapısı:
-# Veritabanım içinde birebir ilişkisi olan tablolar için özellikle İş Katmanında TransactionalAdd ya da Transactional Update gibi metotlar tanımlamış örneğin Müşteri tablosundan bir kayıt eklediğimde aynı anda Telefon tabloma da bir kayıt eklemeye çalışıyor olacağım.Ama bir tablo ekleme problemi yaşarsam diğerine de ekleme yapmayıp işlemi tamamen durduracak
+# Veritabanım içinde birebir ilişkisi olan tablolar için özellikle İş Katmanında TransactionalAdd ya da Transactional Update gibi metotlar tanımlamış olup örneğin Müşteri tablosundan bir kayıt eklediğimde aynı anda Telefon tabloma da bir kayıt eklemeye çalışıyor olacağım.Ama bir tablo ekleme problemi yaşarsam diğerine de ekleme yapmayıp işlemi tamamen durduracak
 
 
 
