@@ -10,7 +10,7 @@ namespace Siparis.Core.CrossCuttingCornces.Logging.Log4Net.Concart
 {
     public class FileLogger : LoggerService
     {
-        public FileLogger(ILog log) : base(LogManager.GetLogger("FileLogger"))
+        public FileLogger() : base(LogManager.GetLogger("FileLogger"))
         {
         }
     }
