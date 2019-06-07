@@ -11,7 +11,7 @@ namespace Siparis.Core.CrossCuttingCornces.Logging.Log4Net.Concart
 {
     public class DatabaseLogger:LoggerService
     {
-        public DatabaseLogger(ILog log) : base(LogManager.GetLogger("DatabaseLogger"))
+        public DatabaseLogger() : base(LogManager.GetLogger("DatabaseLogger"))
         {
         }
 
