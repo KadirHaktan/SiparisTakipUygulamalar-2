@@ -54,8 +54,10 @@ namespace Siparis.Core.Aspect
 
             if (manager.IsAdd(key))
             {
-                manager.Get<object>(key);
+               args.ReturnValue= manager.Get<object>(key);
             }
+            
+            base.OnInvoke(args);
 
             manager.Add(key, args.ReturnValue, CacheByMinute);
         }
