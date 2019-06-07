@@ -11,8 +11,7 @@
 
 # Entity Framework
 # Fluent Validation(Validasyon)
-# PostSharp(Aspect Oriented Programming yapmak için Cross Cutting Cornces dediğimiz yapıların iş katmanında çağrılırken birbirinden ayrılaştırıp ama yinede ilgili metoda girip işlemlerini gerçekleşebilmesi kullanılan programlama tekniği diyebiliriz.Metodun içine yazmak 
-# yerine Attribute olarak metodun üstüne ekleyerek ilgili işlemin metodun girmesini sağlıyoruz.Bu sayede daha temiz kod yazmış oluyoruz )
+# PostSharp(Aspect Oriented Programming yapmak için Cross Cutting Cornces dediğimiz yapıların iş katmanında çağrılırken birbirinden ayrılaştırıp ama yinede ilgili metoda girip işlemlerini gerçekleşebilmesi kullanılan programlama tekniği diyebiliriz.Metodun içine yazmak  yerine Attribute olarak metodun üstüne ekleyerek ilgili işlemin metodun girmesini sağlıyoruz.Bu sayede daha temiz kod yazmış oluyoruz )
 # Log4Net(Loglama)
 # Microsoft'un Caching kütüphanesi
 
